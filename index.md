@@ -8,7 +8,7 @@ layout: default
 {% for project in site.projects %}
 <ul>
     <li>
-        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        {% include project_listing.html %}
     </li>
 </ul>
 {% endfor %}

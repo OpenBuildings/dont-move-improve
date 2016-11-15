@@ -1,0 +1,4 @@
+<a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+{% for image in project.images %}
+    {% include project_image.html %}
+{% endfor %}
