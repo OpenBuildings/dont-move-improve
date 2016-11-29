@@ -39,6 +39,8 @@ collections:
   projects:
     permalink: /:categories/:title
     output: true
+  images:
+    output: true
 
 defaults:
   -

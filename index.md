@@ -4,6 +4,7 @@ layout: default
 <header>
     <h1>{{ site.title }}</h1>
 </header>
-{% for project in site.projects %}
-    {% include project_listing.html %}
+
+{% for image in site.images %}
+    {% include image_listing.html %}
 {% endfor %}

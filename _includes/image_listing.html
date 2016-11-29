@@ -1,0 +1,8 @@
+
+<a href="{{ image.url }}">{{ image.project_title }}</a>
+by <span>{{ image.architect }}</span>
+<ul>
+{% for tag in image.tags %}
+    <li>{{tag}}</li>
+{% endfor %}
+</ul>
