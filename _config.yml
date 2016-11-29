@@ -41,6 +41,9 @@ collections:
     output: true
   images:
     output: true
+  tags:
+    permalink: /:title
+    output: true
 
 defaults:
   -
@@ -61,6 +64,12 @@ defaults:
       type: projects
     values:
       layout: project
+  -
+    scope:
+      path: _tags
+      type: tags
+    values:
+      layout: default
 
 trackingCode: UA-73819275-3
 

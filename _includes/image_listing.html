@@ -1,8 +1,14 @@
 
-<a href="{{ image.url }}">{{ image.project_title }}</a>
-by <span>{{ image.architect }}</span>
-<ul>
-{% for tag in image.tags %}
-    <li>{{tag}}</li>
+{% for project in site.projects %}
+{% if project.title == image.project %}
+<article class="{{ image.orientation }}">
+    <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+    by <span>{{ project.architect }}</span>
+    <ul>
+    {% for tag in image.tags %}
+        <li>{{tag}}</li>
+    {% endfor %}
+    </ul>
+</article>
+{% endif %}
 {% endfor %}
-</ul>

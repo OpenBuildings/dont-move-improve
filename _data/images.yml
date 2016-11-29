@@ -1,0 +1,6 @@
+- project: My project
+  tags: [living, dining]
+  orientation: vertical
+  src: https://res.cloudinary.com/clippings/image/upload/t_big/v1/products/mammoth-fluffy-chair-forest-wool-norr11-knut-bendik-humlevik-rune-krojgaard-clippings-8654491.jpg
+  caption: A nice image
+  alt: A kitchen image
