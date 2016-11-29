@@ -26,7 +26,18 @@ products:
     <li>{{category}}</li>
 {% endfor %}
 </ul>
+<h1>Brands</h1>
+<ul>
+{% for product in page.products %}
+    <li>{{product.brand}}</li>
+{% endfor %}
+</ul>
 {% for image in page.images %}
 <img src="{{image.url}}" alt="{{image.alt}}">
 <span>{{image.caption}}</span>
+{% endfor %}
+{% for product in page.products %}
+<h2>{{product.name}}</h2>
+<img src="{{product.image}}" alt="{{product.brand}}">
+<a href="{{product.url}}">{{product.name}}</a>
 {% endfor %}
