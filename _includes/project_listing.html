@@ -1,4 +1,9 @@
-<a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-{% for image in project.images %}
-    {% include project_image.html %}
-{% endfor %}
+<section>
+    <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+    by <span>{{ project.designer }}</span>
+    <ul>
+    {% for category in project.categories %}
+        <li>{{category}}</li>
+    {% endfor %}
+    </ul>
+</section>
