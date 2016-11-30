@@ -1,4 +1,5 @@
-<h3>Brands included in this project</h3>
+<p class="brands">Brands included in this project;
 {% for product in page.products %}
-    <a href="https://clippings.com/{{product.brandslug}}">{{product.brand}}</a>
+    <span><a href="https://clippings.com/{{product.brandslug}}">{{product.brand}}</a></span>
 {% endfor %}
+</p>

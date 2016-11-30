@@ -1,5 +1,5 @@
-{% include project/category_list.html %}
-<h1>{{ page.title }} by {{ page.architect }}</h1>
+{% include project/categories.html %}
+<h1>{{ page.title }} <span class="serif">by</span> {{ page.architect }}</h1>
 {% include project/tags.html %}
-<p>{{ page.description }}</p>
+<p class="description">{{ page.description }}</p>
 {% include project/brands.html %}

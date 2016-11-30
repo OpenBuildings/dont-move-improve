@@ -2,12 +2,16 @@
 
 <h2>Shop the look with Clippings</h2>
 
-{% for product in page.products %}
-    <a href="{{product.url}}">
-        <img src="{{product.image}}" alt="{{product.brand}}">
-        <span>{{product.name}} by {{product.brand}}</span>
-        <span class="btn">Shop now</span>
-    </a>
-{% endfor %}
+<ul>
+    {% for product in page.products %}
+    <li>
+        <a href="{{product.url}}">
+            <span class="image" style="background-image: url('{{product.image}}')"></span>
+            <span>{{product.name}} by {{product.brand}}</span>
+            <span class="btn">Shop now</span>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
 
 </section>

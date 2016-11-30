@@ -29,14 +29,20 @@ body {
     font-size: 22px;
 }
 
+header {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 60px;
+}
+
 main.wrapper {
-    width: 100%;
+    width: 90vw;
     margin: auto;
 }
 
 .portrait, .landscape {
     float: right;
-    margin: 0 5vw;
+    margin: 0 2.5vw;
 }
 
 .portrait {
@@ -44,7 +50,7 @@ main.wrapper {
 }
 
 .landscape {
-    width: 90vw;
+    width: 85vw;
 } 
 
 a {
@@ -54,11 +60,16 @@ a {
 
 img {
     width: 100%;
+    display: block;
 }
 
 .serif {
     font-family: $serif;
     font-size: 1.1em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
 }
 
 .viewby {
@@ -120,4 +131,117 @@ img {
     margin: 0 5px;
 }
 
-.project-list>a {}
+.back {
+    text-align: left;
+    font-size: 0.9em;
+    margin-bottom: 2em;
+}
+
+.project h1 {
+    margin: 0 auto 0.5em auto;
+    font-size: 3em;
+    line-height: 1.2em;
+    max-width: 800px;
+}
+
+.project>p:not(.back) {
+    margin: 1em auto;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    font-family: $serif;
+    max-width: 800px;
+}
+
+.project>p.description {
+    margin-top: 3em;
+}
+
+.project .tags {
+    list-style: none;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 auto 3em auto;
+}
+
+.project .tags>li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.project>.brands>span>a {
+    font-family: $sans;
+    font-size: 0.9em;
+    position: relative;
+}
+
+.project>.brands>span>a:after {
+    content: '';
+    border-bottom: 1px solid $black;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease;
+}
+
+.project>.brands>span>a:hover:after {
+    width: 100%;
+}
+
+.project>.brands>span:not(:last-child):after {
+    content:', ';
+}
+
+.project>.brands>span:last-child:after {
+    content: '.';
+}
+
+.project>.brands>span:last-child:before {
+    content: 'and ';
+    font-family: $serif;
+    font-size: 1em;
+}
+
+.project>.images {
+    margin-top: 3em;
+}
+
+.project>.images>img {
+    margin-bottom: 2em;
+}
+
+#products>ul {
+    list-style: none;
+    width: 100%;
+}
+
+#products>ul:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+#products>ul>li {
+    display: block;
+    float: left;
+    width: 20%;
+    margin: 0 2.5%;
+}
+
+#products>ul>li>a {
+    display: block;
+    width: 100%;
+}
+
+#products>ul>li>a>.image {
+    display: block;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
