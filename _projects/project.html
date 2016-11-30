@@ -1,4 +1,5 @@
 ---
+layout: project
 title: My project
 architect: West Archs
 categories: shortlisted winner
@@ -17,51 +18,6 @@ products:
     brandslug: hay
 ---
 
-
-<a href="{{site.baseurl}}/">Back</a>
-
-<ul>
-{% for category in page.categories %}
-    <li>{{category}}</li>
-{% endfor %}
-</ul>
-
-<h1>{{ page.title }} by {{ page.architect }}</h1>
-
-<ul>
-{% for tag in page.tags %}
-    <li>{{tag}}</li>
-{% endfor %}
-</ul>
-
-<p>{{ page.description }}</p>
-
-<p>Brands included in this project;
-{% for product in page.products %}
-    <a href="https://clippings.com/{{product.brandslug}}">{{product.brand}}</a>
-{% endfor %}
-</p>
-
-<section class="images">
-    
-{% for image in site.data.images %}
-    {% if image.project == page.title %}
-        {% include image.html %}
-    {% endif %}
-{% endfor %}
-
-</section>
-
-<section id="products">
-
-<h2>Shop the look on Clippings</h2>
-
-{% for product in page.products %}
-    <a href="{{product.url}}">
-        <img src="{{product.image}}" alt="{{product.brand}}">
-        <span>{{product.name}} by {{product.brand}}</span>
-        <span class="btn">Shop now</span>
-    </a>
-{% endfor %}
-
-</section>
+{% include project/body.html %}
+{% include project/images.html %}
+{% include project/products.html %}

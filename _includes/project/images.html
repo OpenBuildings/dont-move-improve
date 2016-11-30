@@ -1,0 +1,7 @@
+<section class="images">
+{% for image in site.data.images %}
+    {% if image.project == page.title %}
+        {% include image.html %}
+    {% endif %}
+{% endfor %}
+</section>
