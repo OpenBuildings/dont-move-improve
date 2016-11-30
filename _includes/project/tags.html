@@ -1,4 +1,7 @@
 <ul class="tags">
+{% for category in page.categories %}
+    <li>{{category}}</li>
+{% endfor %}
 {% for tag in page.tags %}
     <li>{{tag}}</li>
 {% endfor %}
