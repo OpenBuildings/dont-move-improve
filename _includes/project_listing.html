@@ -1,9 +1,11 @@
-<article>
+{% for image in site.data.images %}
+    {% if image.project == project.title %}
+        {% assign image = image %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+<article class="{{image.orientation}}">
     {% include project_info.html %}
-    {% for image in site.data.images %}
-        {% if image.project == project.title %}
-            {% include image.html %}
-            {% break %}
-        {% endif %}
-    {% endfor %}
+    {% include image.html %}
 </article>
