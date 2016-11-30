@@ -1,13 +1,21 @@
+<h2>View by project</h2>
+<a href="{{site.baseurl}}/">View all</a>
+
+
+<h2>View by room</h2>
+<ul>
+{% for tag in site.tags %}
+    <li>
+        <a href="{{tag.url | relative_url}}">{{tag.title}}</a>
+    </li>
+{% endfor %}
+</ul>
+
 {% for project in site.projects %}
     {% if project.title == image.project %}
-    <article class="{{ image.orientation }}">
-        {% include project_info.html %}
+    <article class="{{ image.orientation }}" style="background: red; margin: 20px; padding:20px;">
         {% include image.html %}
-        <ul>
-        {% for tag in image.tags %}
-            <li>{{tag}}</li>
-        {% endfor %}
-        </ul>
+        {% include project_info.html %}
     </article>
     {% endif %}
 {% endfor %}

@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
-<header>
-    <h1>{{ site.title }}</h1>
-</header>
 
+<ul>
 {% for tag in site.tags %}
-    <a href="{{tag.url | relative_url}}">{{tag.title}}</a>
+    <li>
+        <a href="{{tag.url | relative_url}}">{{tag.title}}</a>
+    </li>
 {% endfor %}
+</ul>
 
 {% for project in site.projects %}
     {% include project_listing.html %}
