@@ -1,15 +1,13 @@
-
 {% for project in site.projects %}
-{% if project.title == image.project %}
-<article class="{{ image.orientation }}">
-    <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-    by <span>{{ project.architect }}</span>
-    {% include image.html %}
-    <ul>
-    {% for tag in image.tags %}
-        <li>{{tag}}</li>
-    {% endfor %}
-    </ul>
-</article>
-{% endif %}
+    {% if project.title == image.project %}
+    <article class="{{ image.orientation }}">
+        {% include project_info.html %}
+        {% include image.html %}
+        <ul>
+        {% for tag in image.tags %}
+            <li>{{tag}}</li>
+        {% endfor %}
+        </ul>
+    </article>
+    {% endif %}
 {% endfor %}

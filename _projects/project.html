@@ -33,8 +33,7 @@ products:
 <h1>Images</h1>
 {% for image in site.data.images %}
     {% if image.project == page.title %}
-        <img src="{{image.src}}" alt="{{image.alt}}">
-        <span>{{image.caption}}</span>
+        {% include image.html %}
     {% endif %}
 {% endfor %}
 
