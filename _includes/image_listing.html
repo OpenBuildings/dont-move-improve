@@ -7,19 +7,7 @@
     {% if project.title == image.project %}
     <article class="{{ image.orientation }}" style="background: red; margin: 20px; padding:20px;">
         {% include image.html %}
-        <a href="{{ project.url | relative_url }}">
-            <ul class="categories">
-            {% for category in project.categories %}
-                <li>{{category}}</li>
-            {% endfor %}
-            </ul>
-            {{ project.title }} by <span>{{ project.architect }}</span>
-            <ul class="tags">
-            {% for tag in project.tags %}
-                <li>{{tag}}</li>
-            {% endfor %}
-            </ul>
-        </a>
+        {% include project/info.html %}
     </article>
     {% endif %}
 {% endfor %}
