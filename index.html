@@ -9,6 +9,6 @@ layout: default
     <a href="{{tag.url | relative_url}}">{{tag.title}}</a>
 {% endfor %}
 
-{% for image in site.data.images %}
-    {% include image_listing.html %}
+{% for project in site.projects %}
+    {% include project_listing.html %}
 {% endfor %}
