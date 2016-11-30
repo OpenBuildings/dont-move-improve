@@ -2,13 +2,7 @@
 layout: default
 ---
 
-<ul>
-{% for tag in site.tags %}
-    <li>
-        <a href="{{tag.url | relative_url}}">{{tag.title}}</a>
-    </li>
-{% endfor %}
-</ul>
+{% include tags.html %}
 
 {% for project in site.projects %}
     {% include project/listing.html %}
