@@ -15,7 +15,109 @@
     font-style: normal;
 }
 
+//reset
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: $bg-color;
     font-family: $sans;
+    text-align: center;
+    font-size: 22px;
 }
+
+main.wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.portrait, .landscape {
+    float: right;
+    margin: 0 5vw;
+}
+
+.portrait {
+    width: 40vw;
+}
+
+.landscape {
+    width: 90vw;
+} 
+
+a {
+    color: $black;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.serif {
+    font-family: $serif;
+    font-size: 1.1em;
+}
+
+.viewby {
+    margin: 40px 0;
+}
+
+.viewby h4 {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+
+.viewby>ul {
+    list-style: none;
+}
+
+.viewby>ul>li {
+    display: inline;
+}
+
+.viewby>ul>li:not(:last-child):after {
+	content:' / ';
+}
+
+.viewby>ul>li>a {
+    position: relative;
+}
+
+.viewby>ul>li>a:after {
+    content: '';
+    border-bottom: 1px solid $black;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease;
+}
+
+.viewby>ul>li>a:hover:after {
+    width: 100%;
+}
+
+.project-info {
+}
+
+.project-info>ul {
+    list-style: none;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.project-info>ul>li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.project-list>a {}

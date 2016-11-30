@@ -1,13 +1,13 @@
-<a href="{{ project.url | relative_url }}">
+<div class="project-info">
     <ul class="categories">
     {% for category in project.categories %}
         <li>{{category}}</li>
     {% endfor %}
     </ul>
-    {{ project.title }} by <span>{{ project.architect }}</span>
+    {{ project.title }} <span class="serif">by</span> {{ project.architect }}
     <ul class="tags">
     {% for tag in project.tags %}
         <li>{{tag}}</li>
     {% endfor %}
     </ul>
-</a>
+</div>

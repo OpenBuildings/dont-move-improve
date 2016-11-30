@@ -5,7 +5,7 @@
     {% endif %}
 {% endfor %}
 
-<article class="{{image.orientation}}">
-    {% include project/info.html %}
+<a href="{{ project.url | relative_url }}" class="{{image.orientation}}">
     {% include image.html %}
-</article>
+    {% include project/info.html %}
+</a>

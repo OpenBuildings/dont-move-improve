@@ -1,7 +1,9 @@
 ---
-title: Living room
+title: Living
 layout: default
 ---
+{% include categories.html %}
+{% include tags.html %}
 {% for image in site.data.images %}
     {% for tag in image.tags %}
         {% if tag == 'living' %}

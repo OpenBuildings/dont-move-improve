@@ -1,13 +1,10 @@
-<h2>View by project</h2>
-<a href="{{site.baseurl}}/">View all</a>
-
-<h2>View by room</h2>
-{% include tags.html %}
+<section class="image-list">
 {% for project in site.projects %}
     {% if project.title == image.project %}
-    <article class="{{ image.orientation }}" style="background: red; margin: 20px; padding:20px;">
+    <a href="{{ project.url | relative_url }}" class="{{ image.orientation }}">
         {% include image.html %}
         {% include project/info.html %}
-    </article>
+    </a>
     {% endif %}
 {% endfor %}
+</section>
