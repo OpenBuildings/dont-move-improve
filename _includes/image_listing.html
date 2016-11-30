@@ -4,6 +4,7 @@
 <article class="{{ image.orientation }}">
     <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
     by <span>{{ project.architect }}</span>
+    {% include image.html %}
     <ul>
     {% for tag in image.tags %}
         <li>{{tag}}</li>

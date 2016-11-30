@@ -2,4 +2,10 @@
 <article>
     <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
     by <span>{{ project.architect }}</span>
+    {% for image in site.data.images %}
+        {% if image.project == project.title %}
+            {% include image.html %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
 </article>
