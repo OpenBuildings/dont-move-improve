@@ -54,7 +54,7 @@ header svg {
     display: block;
 }
 
-header>.right>svg {
+header>.right svg {
     margin:5px 5px 0px 0px;
 }
 
@@ -287,6 +287,7 @@ h1,h2,h3,h4,h5,h6 {
 
 #products {
     margin: 0 auto 6em auto;
+    visibility: hidden;
 }
 
 #products>h2 {
@@ -435,7 +436,7 @@ h1,h2,h3,h4,h5,h6 {
         width: 85vw;
     }
     .project>h1 {
-        font-size:1.8em;
+        font-size:1.6em;
         margin-top: 3em;
     }
     .back {
@@ -448,6 +449,9 @@ h1,h2,h3,h4,h5,h6 {
     #products>ul>li {
         width: 45%
     }
+    #products>h2 {
+        font-size: 1em;
+    }
     .project-listing>a>.caption .title {
         font-size: 0.8em;
     }
@@ -456,6 +460,12 @@ h1,h2,h3,h4,h5,h6 {
     }
     .project-listing>a>.caption .tags {
         bottom: 20px;
+    }
+    .project>p.description, .project>p.brands {
+        font-size: 0.8em;
+    }
+    header svg {
+        transform: scale(0.7);
     }
 }
 
