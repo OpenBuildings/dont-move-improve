@@ -126,9 +126,11 @@ h1,h2,h3,h4,h5,h6 {
 
 .intro>p>a {
     position: relative;
-    display: inline-block;
+//     display: inline-block;
+    border-bottom: 1px solid $black;
 }
 
+/*
 .intro>p>a:after {
     content: '';
     border-bottom: 1px solid $black;
@@ -143,6 +145,7 @@ h1,h2,h3,h4,h5,h6 {
 .intro>p>a:hover:after {
     width: 100%;
 }
+*/
 
 .viewby {
     margin: 30px 0 40px 0;
@@ -382,6 +385,7 @@ h1,h2,h3,h4,h5,h6 {
     max-height: 500px;
     background: #fff;
     padding: 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 .project-listing>a:hover>.caption {
