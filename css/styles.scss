@@ -88,6 +88,11 @@ img {
     display: block;
 }
 
+.credit {
+    font-size: 9px;
+    color: #999;
+}
+
 .serif {
     font-family: $serif;
     font-size: 1.1em;
@@ -113,23 +118,21 @@ h1,h2,h3,h4,h5,h6 {
 
 .intro>p {
     width: 90%;
-    max-width: 540px;
     margin: 0 auto 1em auto;
-    font-size: 0.8em;
-    font-family: $bigserif;
     line-height: 1.5em;
+    max-width: 560px;
+    font-size: 0.8em;
 }
 
 .intro>p>a {
     position: relative;
     display: inline-block;
-    font-family: $sans;
 }
 
 .intro>p>a:after {
     content: '';
     border-bottom: 1px solid $black;
-    height: 1.2em;
+    height: 1.3em;
     width: 0;
     position: absolute;
     top: 0;
@@ -271,7 +274,7 @@ h1,h2,h3,h4,h5,h6 {
 .project>.brands>span:last-child:before {
     content: 'and ';
     font-family: $serif;
-    font-size: 1em;
+    font-size: 1.05em;
 }
 
 .project>.images {
@@ -363,7 +366,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .project-listing>a {
     position: relative;
-    background: $black;
 }
 
 .project-listing>a>.caption {
@@ -379,14 +381,6 @@ h1,h2,h3,h4,h5,h6 {
     max-height: 500px;
     background: #fff;
     padding: 50px;
-}
-
-.project-listing>a>img {
-    transition: all 1s ease;
-}
-
-.project-listing>a:hover>img {
-    opacity: 0.6;
 }
 
 .project-listing>a:hover>.caption {
