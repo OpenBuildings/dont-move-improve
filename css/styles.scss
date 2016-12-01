@@ -161,7 +161,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .viewby>ul>li {
-    display: inline;
+    display: inline; line-height: 1.2em;
 }
 
 .viewby>ul>li:not(:last-child):after {
@@ -308,7 +308,7 @@ h1,h2,h3,h4,h5,h6 {
     display: block;
     float: left;
     width: 20%;
-    margin: 0 2.5%;
+    margin: 20px 2.5%;
 }
 
 #products>ul>li>a {
@@ -376,7 +376,7 @@ h1,h2,h3,h4,h5,h6 {
     transition: all .3s ease;
     opacity: 0;
     width: 80%;
-    height: 80%;
+    height: 70%;
     max-width: 500px;
     max-height: 500px;
     background: #fff;
@@ -420,3 +420,42 @@ h1,h2,h3,h4,h5,h6 {
     float: none;
     margin: auto;
 }
+
+
+//Responsive:
+
+@media screen and (max-width: 768px) {
+    .intro {
+        font-size: 0.8em;
+    }
+    .viewby {
+        font-size: 0.8em;
+    }
+    .portrait {
+        width: 85vw;
+    }
+    .project>h1 {
+        font-size:1.8em;
+        margin-top: 3em;
+    }
+    .back {
+        left: 0;
+    }
+    .shop {
+        position: absolute;
+        right: 0;
+    }
+    #products>ul>li {
+        width: 45%
+    }
+    .project-listing>a>.caption .title {
+        font-size: 0.8em;
+    }
+    .project-listing>a>.caption {
+        padding: 20px;
+    }
+    .project-listing>a>.caption .tags {
+        bottom: 20px;
+    }
+}
+
