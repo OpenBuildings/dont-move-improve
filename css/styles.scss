@@ -219,7 +219,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #products>h2 {
-    margin: 4em auto 2em auto;
+    margin: 0 auto 2em auto;
 }
 
 #products>ul {
@@ -227,7 +227,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
 }
 
-#products>ul:after {
+#products>ul:after, .images:after {
     display: table;
     content: '';
     clear: both;
