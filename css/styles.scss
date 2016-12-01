@@ -20,6 +20,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -32,10 +33,32 @@ body {
 header {
     padding: 10px;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
-main.wrapper {
+header:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+header>.left {
+    float: left;
+}
+
+header>.right {
+    float: right;
+}
+
+header svg {
+    display: block;
+}
+
+header>.right>svg {
+    margin:5px 5px 0px 0px;
+}
+
+.wrapper {
     width: 90vw;
     margin: auto;
 }
@@ -75,8 +98,51 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
 }
 
+.intro:after {
+    content: '';
+    border-left: 1px solid #ddd;
+    width: 1px;
+    height: 40px;
+    display: block;
+    margin: auto;
+}
+
+.intro>svg {
+    margin-bottom: 30px;
+}
+
+.intro>p {
+    width: 90%;
+    max-width: 540px;
+    margin: 0 auto 1em auto;
+    font-size: 0.8em;
+    font-family: $bigserif;
+    line-height: 1.5em;
+}
+
+.intro>p>a {
+    position: relative;
+    display: inline-block;
+    font-family: $sans;
+}
+
+.intro>p>a:after {
+    content: '';
+    border-bottom: 1px solid $black;
+    height: 1.2em;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease;
+}
+
+.intro>p>a:hover:after {
+    width: 100%;
+}
+
 .viewby {
-    margin: 40px 0;
+    margin: 30px 0 40px 0;
 }
 
 .viewby h4 {
@@ -119,23 +185,25 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .back {
-    text-align: left;
+    position: absolute;
     font-size: 0.7em;
-    margin-bottom: 2em;
+    padding: 20px;
+    top:80px;
+    left:20px;
 }
 
 .shop {
     position: fixed;
-    top:60px;
-    right: 0;
-    padding: 20px 5vw 20px 25px;
+    top:80px;
+    right:20px;
+    padding: 20px;
     background: #fff;
     font-size: 0.7em;
     z-index: 999;
 }
 
 .project h1 {
-    margin: 0 auto 0.5em auto;
+    margin: 1.5em auto 0.5em auto;
     font-size: 2.4em;
     line-height: 1.2em;
     max-width: 700px;
@@ -284,7 +352,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .project-listing, .image-listing {
-    margin: 4em 0;
+    margin: 3em 0 4em 0;
 }
 
 .project-listing:after {
@@ -352,4 +420,9 @@ h1,h2,h3,h4,h5,h6 {
 .image-listing a .tags,
 .image-listing a .categories {
     display: none;
+}
+
+.image-listing .portrait, .image-listing .landscape {
+    float: none;
+    margin: auto;
 }
