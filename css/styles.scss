@@ -43,6 +43,8 @@ main.wrapper {
 .portrait, .landscape {
     float: right;
     margin: 0 2.5vw;
+    margin-bottom: 4em;
+    visibility: hidden;
 }
 
 .portrait {
@@ -114,22 +116,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .viewby>ul>li>a:hover:after {
     width: 100%;
-}
-
-.project-info {
-}
-
-.project-info>ul {
-    list-style: none;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.project-info>ul>li {
-    display: inline;
-    margin: 0 5px;
 }
 
 .back {
@@ -270,6 +256,7 @@ h1,h2,h3,h4,h5,h6 {
     display: block;
     margin-top: 2em;
     font-size: 0.7em;
+    line-height: 1.3em;
 }
 
 #products>ul>li>a>.btn {
@@ -277,4 +264,91 @@ h1,h2,h3,h4,h5,h6 {
     padding: 10px 15px;
     border: 2px solid $black;
     margin: 1em auto;
+}
+
+.project-info>ul {
+    list-style: none;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.project-info>ul>li {
+    display: inline;
+}
+
+.project-info>ul>li:not(:last-child):after {
+    content: ' / ';
+}
+
+.project-listing, .image-listing {
+    margin: 4em 0;
+}
+
+.project-listing:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.project-listing>a {
+    position: relative;
+    background: $black;
+}
+
+.project-listing>a>.caption {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate3d(-50%,-50%,0) scale(1.05);
+    transition: all .3s ease;
+    opacity: 0;
+    width: 80%;
+    height: 80%;
+    max-width: 500px;
+    max-height: 500px;
+    background: #fff;
+    padding: 50px;
+}
+
+.project-listing>a>img {
+    transition: all 1s ease;
+}
+
+.project-listing>a:hover>img {
+    opacity: 0.6;
+}
+
+.project-listing>a:hover>.caption {
+    transform: translate3d(-50%,-50%,0) scale(1);
+    opacity: 1;
+}
+
+.project-listing>a>.caption .title {
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    width: 100%;
+    line-height: 1.3em;
+    padding: 0 20%;
+}
+
+.project-listing>a>.caption .tags {
+    position: absolute;
+    bottom:50px;
+    left:0;
+    width: 100%;
+}
+
+.image-listing a {
+    display: block;
+    margin-top: 1em;
+    font-size: 0.7em;
+}
+
+.image-listing a .tags,
+.image-listing a .categories {
+    display: none;
 }

@@ -1,7 +1,9 @@
 <section class="images">
 {% for image in site.data.images %}
     {% if image.project == page.title %}
+        <div class="{{image.orientation}}">
         {% include image.html %}
+        </div>
     {% endif %}
 {% endfor %}
 </section>

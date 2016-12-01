@@ -1,9 +1,9 @@
-<section class="image-list">
+<section class="image-listing">
 {% for project in site.projects %}
     {% if project.title == image.project %}
-    <a href="{{ project.url | relative_url }}" class="{{ image.orientation }}">
+    <div class="{{ image.orientation }}">
         {% include image.html %}
-        {% include project/info.html %}
+        <a href="{{ project.url | relative_url }}">{% include project/info.html %}</a>
     </a>
     {% endif %}
 {% endfor %}

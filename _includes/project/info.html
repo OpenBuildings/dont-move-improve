@@ -4,7 +4,9 @@
         <li>{{category}}</li>
     {% endfor %}
     </ul>
-    {{ project.title }} <span class="serif">by</span> {{ project.architect }}
+    <div class="title">
+        {{ project.title }} <span class="serif">by</span> {{ project.architect }}
+    </div>
     <ul class="tags">
     {% for tag in project.tags %}
         <li>{{tag}}</li>
