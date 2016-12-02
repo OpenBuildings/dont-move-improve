@@ -1,12 +1,10 @@
 <script async charset="utf-8" src="//cdn.thinglink.me/jse/embed.js"></script>
 
-<section class="image-listing">
 {% for project in site.projects %}
     {% if project.title == image.project %}
     <div class="{{ image.orientation }}">
         {% include image.html %}
         <a href="{{ project.url | relative_url }}">{% include project/info.html %}</a>
-    </a>
+    </div>
     {% endif %}
 {% endfor %}
-</section>

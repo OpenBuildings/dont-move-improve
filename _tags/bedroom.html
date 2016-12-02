@@ -4,6 +4,7 @@ layout: default
 ---
 {% include categories.html %}
 {% include tags.html %}
+<section class="image-listing">
 {% for image in site.data.images %}
     {% for tag in image.tags %}
         {% if tag == 'bedroom' %}
@@ -11,3 +12,4 @@ layout: default
         {% endif %}
     {% endfor %}
 {% endfor %}
+</section>

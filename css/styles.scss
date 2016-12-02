@@ -64,14 +64,14 @@ header>.right svg {
 }
 
 .portrait, .landscape {
-    float: right;
+    display: inline-block;
     margin: 0 2.5vw;
     margin-bottom: 5vw;
     visibility: hidden;
 }
 
 .portrait {
-    width: 40vw;
+    width: 39.8vw;
 }
 
 .landscape {
@@ -415,19 +415,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .image-listing a {
-    display: block;
-    margin-top: 1em;
     font-size: 0.7em;
 }
 
 .image-listing a .tags,
 .image-listing a .categories {
     display: none;
-}
-
-.image-listing .portrait, .image-listing .landscape {
-    float: none;
-    margin: auto;
 }
 
 
@@ -455,7 +448,7 @@ h1,h2,h3,h4,h5,h6 {
         right: 0;
     }
     #products>ul>li {
-        width: 40%
+        width: 44%
     }
     #products>h2 {
         font-size: 1em;
