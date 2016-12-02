@@ -4,12 +4,8 @@
         {% break %}
     {% endif %}
 {% endfor %}
-
-<section class="project-listing">
     
 <a href="{{ project.url | relative_url }}" class="{{image.orientation}}">
     {% include image.html %}
     <span class="caption">{% include project/info.html %}</span>
 </a>
-
-</section>
