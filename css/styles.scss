@@ -299,7 +299,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #products {
-    margin: 0 auto 6em auto;
+    margin: 0 auto 6vw auto;
 }
 
 #products>h2 {
@@ -409,6 +409,60 @@ h1,h2,h3,h4,h5,h6 {
 .image-listing a .tags,
 .image-listing a .categories {
     display: none;
+}
+
+
+// MailChimp Signup Form
+footer {
+    margin: 0 auto 4vw auto;
+    text-align: left;
+}
+
+#mc_embed_signup {
+    width: 100%;
+    max-width: 580px;
+    margin: auto;
+    padding: 40px;
+}
+
+#mc_embed_signup h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#mc_embed_signup p {
+    text-align: center;
+    font-size: 0.7em;
+    line-height: 1.5em;
+    margin-bottom: 40px;
+}
+
+#mc_embed_signup label {
+    display: block;
+    font-size: 0.7em;
+    margin-bottom: 5px;
+}
+
+#mc_embed_signup input,
+#mc_embed_signup textarea {
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    font-size: 0.7em;
+    font-family: $sans;
+    line-height: 1.5em;
+    padding: 10px;
+    display: block;
+}
+
+#mc_embed_signup .button {
+    height: 50px;
+    border: none;
+    font-size: 0.7em;
+    background: $black;
+    color: #fff;
+    margin: 0;
 }
 
 
