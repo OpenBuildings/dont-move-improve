@@ -5,8 +5,10 @@
 <ul>
     {% for product in page.products %}
     <li>
-        <span class="image" style="background-image: url('{{product.image}}')"></span>
-        <span class="caption">{{product.name}} <span class="serif">by</span> {{product.brand}}</span>
+        <a href="#mc_embed_signup">
+            <span class="image" style="background-image: url('{{product.image}}')"></span>
+            <span class="caption">{{product.name}} <span class="serif">by</span> {{product.brand}}</span>
+        </a>
     </li>
     {% endfor %}
 </ul>
