@@ -300,7 +300,6 @@ h1,h2,h3,h4,h5,h6 {
 
 #products {
     margin: 0 auto 6em auto;
-    visibility: hidden;
 }
 
 #products>h2 {
@@ -316,6 +315,7 @@ h1,h2,h3,h4,h5,h6 {
     display: inline-block;
     width: 19%;
     margin: 20px 2.5%;
+    visibility: hidden;
 }
 
 #products>ul>li>a {
