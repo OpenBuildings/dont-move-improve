@@ -5,10 +5,8 @@
 <ul>
     {% for product in page.products %}
     <li>
-        <a href="{{product.url}}">
-            <span class="image" style="background-image: url('{{product.image}}')"></span>
-            <span class="caption">{{product.name}} <span class="serif">by</span> {{product.brand}}</span>
-        </a>
+        <span class="image" style="background-image: url('{{product.image}}')"></span>
+        <span class="caption">{{product.name}} <span class="serif">by</span> {{product.brand}}</span>
     </li>
     {% endfor %}
 </ul>
