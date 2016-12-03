@@ -23,7 +23,7 @@ description: > # this means to ignore newlines until "baseurl:"
     The showcase connects to the enormous catalogue of furniture and
     lighting products listed on Clippings.com.
 baseurl: "/dont-move-improve" # the subpath of your site, e.g. /blog
-url: "https://clippings.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://clippings.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ClippingsDesign
 github_username:  clippings
 
