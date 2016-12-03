@@ -16,7 +16,12 @@
 title: Don't Move, Improve! 2017
 email: hello@clippings.com
 description: > # this means to ignore newlines until "baseurl:"
-    Clippings.com has partnered with New London Architecture to create the Don't Move Improve - Shop the Look website, which enables anyone inspired by the Don't Move Improve projects to discover and buy the furniture and lighting that's featured in each home. The showcase connects to the enormous catalogue of furniture and lighting products listed on Clippings.com.
+    Clippings.com has partnered with New London Architecture
+    to create the Don't Move Improve - Shop the Look website,
+    which enables anyone inspired by the Don't Move Improve projects
+    to discover and buy the furniture and lighting that's featured in each home.
+    The showcase connects to the enormous catalogue of furniture and
+    lighting products listed on Clippings.com.
 baseurl: "/dont-move-improve" # the subpath of your site, e.g. /blog
 url: "https://clippings.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ClippingsDesign
