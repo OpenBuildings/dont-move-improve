@@ -412,33 +412,33 @@ footer {
     text-align: left;
 }
 
-#mc_embed_signup {
+#signup {
     width: 100%;
     max-width: 580px;
     margin: auto;
     padding: 40px;
 }
 
-#mc_embed_signup h2 {
+#signup h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-#mc_embed_signup p {
+#signup p {
     text-align: center;
     font-size: 0.7em;
     line-height: 1.5em;
     margin-bottom: 40px;
 }
 
-#mc_embed_signup label {
+#signup label {
     display: block;
     font-size: 0.7em;
     margin-bottom: 5px;
 }
 
-#mc_embed_signup input,
-#mc_embed_signup textarea {
+#signup input,
+#signup textarea {
     border: 1px solid #ddd;
     width: 100%;
     max-width: 500px;
@@ -452,13 +452,45 @@ footer {
     border-radius: 0;
 }
 
-#mc_embed_signup .button {
+#signup .button {
     height: 50px;
     border: none;
     font-size: 0.7em;
     background: $black;
     color: #fff;
     margin: 0;
+}
+
+#thanks {
+    position: fixed;
+    z-index: 9999;
+    top: 70px;
+    right: 10px;
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 3px;
+    padding: 20px 60px 20px 20px;
+    background: rgba($black, 0.8);
+    color: #fff;
+    font-size: 0.7em;
+    line-height: 1.5em;
+    transition: all 0.6s ease;
+    visibility: hidden;
+    transform: translateX(100%);
+} 
+
+#thanks:target {
+    visibility: visible;
+    transform: translateX(0);
+}
+
+#thanks a {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    padding: 20px;
+    font-size: 2em;
+    color: #fff;
 }
 
 
