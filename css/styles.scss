@@ -72,15 +72,15 @@ header>.right svg {
 }
 
 .portrait {
-    width: 39.8vw;
+    width: 39.5vw;
 }
 
-.portrait:nth-child(odd) {
+.portrait:nth-child(even) {
     top: 20vmin;
     padding-bottom: 20vmin;
 }
 
-.project-listing>a.portrait:nth-child(odd)>.caption {
+.project-listing>a.portrait:nth-child(even)>.caption {
     top: 40%;
 }
 
@@ -474,11 +474,11 @@ footer {
     .portrait {
         width: 85vw;
     }
-    .portrait:nth-child(odd) {
+    .portrait:nth-child(even) {
         top: 0;
         padding-bottom: 0;
     }
-    .project-listing>a.portrait:nth-child(odd)>.caption {
+    .project-listing>a.portrait:nth-child(even)>.caption {
         top: 50%;
     }
     .project>h1 {
