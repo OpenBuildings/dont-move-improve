@@ -19,7 +19,8 @@ layout: default
 {% include tags.html %}
 
 <section class="project-listing">
-{% for project in site.projects %}
+{% assign sorted = (site.projects | sort: 'order') %}
+{% for project in sorted %}
     {% include project/listing.html %}
 {% endfor %}
 </section>
