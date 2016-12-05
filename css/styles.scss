@@ -68,10 +68,20 @@ header>.right svg {
     margin: 0 2.5vw;
     margin-bottom: 5vw;
     visibility: hidden;
+    position: relative;
 }
 
 .portrait {
     width: 39.8vw;
+}
+
+.portrait:nth-child(odd) {
+    top: 20vmin;
+    padding-bottom: 20vmin;
+}
+
+.project-listing>a.portrait:nth-child(odd)>.caption {
+    top: 40%;
 }
 
 .landscape {
@@ -128,26 +138,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .intro>p>a {
     position: relative;
-//     display: inline-block;
     border-bottom: 1px solid $black;
 }
-
-/*
-.intro>p>a:after {
-    content: '';
-    border-bottom: 1px solid $black;
-    height: 1.3em;
-    width: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all .3s ease;
-}
-
-.intro>p>a:hover:after {
-    width: 100%;
-}
-*/
 
 .viewby {
     margin: 30px 0 40px 0;
@@ -481,6 +473,13 @@ footer {
     }
     .portrait {
         width: 85vw;
+    }
+    .portrait:nth-child(odd) {
+        top: 0;
+        padding-bottom: 0;
+    }
+    .project-listing>a.portrait:nth-child(odd)>.caption {
+        top: 50%;
     }
     .project>h1 {
         font-size:1.6em;
