@@ -68,7 +68,7 @@ defaults:
     values:
       layout: default
 
-trackingCode: UA-73819275-3
+trackingCode: UA-4765782-20
 
 sass:
     sass_dir: _sass
