@@ -71,6 +71,12 @@ header>.right svg {
     position: relative;
 }
 
+.portrait>img, .landscape>img {
+    min-width: 100%;
+    min-height: 300px;
+    background: #f7f7f7;
+}
+
 .portrait {
     width: 39.5vw;
 }
@@ -86,7 +92,7 @@ header>.right svg {
 
 .landscape {
     width: 85vw;
-} 
+}
 
 a {
     color: $black;
@@ -126,6 +132,11 @@ h1,h2,h3,h4,h5,h6 {
 
 .intro>svg {
     margin-bottom: 30px;
+}
+
+.intro>h1 {
+    margin-bottom: 0.8em;
+    font-size: 1.3em;
 }
 
 .intro>p {
@@ -371,7 +382,6 @@ h1,h2,h3,h4,h5,h6 {
     max-height: 500px;
     background: #fff;
     padding: 50px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 .project-listing>a:hover>.caption {
