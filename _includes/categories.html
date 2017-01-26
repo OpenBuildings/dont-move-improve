@@ -4,8 +4,10 @@
         <li>
             <a href="{{site.baseurl}}/">All</a>
         </li>
+        {% for categories in site.categories %}
         <li>
-            <a href="{{site.baseurl}}/">Shortlisted</a>
+            <a href="{{categories.url | relative_url}}">{{categories.title}}</a>
         </li>
+        {% endfor %}
     </ul>
 </section>

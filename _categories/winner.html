@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+---
+title: Winners
+layout: default
+---
+
+<section class="intro room">
+    <h1>Winners</h1>
+    <p>Explore the winners of Don't Move, Improve! 2017. Find inspiration for your own project and discover the <a title="Shop designer furniture" href="https://clippings.com/shop/furniture" target="_blank">furniture</a> and <a title="Shop designer lighting" href="https://clippings.com/shop/lighting" target="_blank">lighting</a> pieces that bring these spaces to life.</p>
+</section>
+
+{% include categories.html %}
+{% include tags.html %}
+
+<section class="project-listing">
+{% assign sorted = (site.projects | sort: 'order') %}
+{% for project in sorted %}
+    {% if categories == 'winner' %}
+            {% include project/listing.html %}
+    {% endif %}
+{% endfor %}
+</section>

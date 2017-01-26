@@ -65,6 +65,12 @@ defaults:
       type: tags
     values:
       layout: default
+  -
+    scope:
+      path: _categories
+      type: categories
+    values:
+      layout: default
 
 trackingCode: UA-4765782-20
 
