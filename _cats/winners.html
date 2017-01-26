@@ -14,7 +14,7 @@ title: Winners
 {% assign sorted = (site.projects | sort: 'order') %}
 {% for project in sorted %}
     {% for category in project.categories %}
-        {% if category == 'winner' %}
+        {% if category == 'winners' %}
             {% include project/listing.html %}
         {% endif %}
     {% endfor %}
