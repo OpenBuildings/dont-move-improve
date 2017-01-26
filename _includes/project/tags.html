@@ -10,7 +10,7 @@
 {% endfor %}
 {% for pageTag in page.tags %}
     {% for tag in site.tags %}
-        {% if tag.title == pageTag %}
+        {% if tag.slug == pageTag %}
             <li><a href="{{ tag.url | relative_url }}">{{ tag.title }}</a></li>
         {% endif %}
     {% endfor %}
