@@ -45,6 +45,9 @@ collections:
   tags:
     permalink: /:title
     output: true
+  cats:
+    permalink: /:title
+    output: true
 
 defaults:
   -
