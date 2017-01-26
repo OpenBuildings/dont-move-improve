@@ -328,12 +328,6 @@
   src: https://cdn.thinglink.me/api/image/878233767880163328/#tl-878233767880163328;1043138249
   caption: 'Photo: Rory Gardiner'
   alt: Primrose Hill Flat dining room by Amos Goldreich Architecture
-- project: Primrose Hill Flat
-  tags: [study]
-  orientation: portrait
-  src: https://cdn.thinglink.me/api/image/878233767494287360/#tl-878233767494287360;1043138249
-  caption: 'Photo: Rory Gardiner'
-  alt: Primrose Hill Flat study by Amos Goldreich Architecture
 - project: Tower Hamlets Tandem
   tags: [kitchen]
   orientation: portrait
