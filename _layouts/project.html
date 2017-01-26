@@ -5,5 +5,12 @@ layout: default
 <article class="project">
     <a class="shop" href="#signup" title="Get the Don't Move, Improve! look">&darr; Get the Look</a>
     <a class="back" href="{{site.baseurl}}/" title="View all Don't Move, Improve! projects">&larr; Back to projects</a>
+    {% include project/head.html %}
+    {% include project/body.html %}
     {{ content }}
+    {% comment %}
+        {% include project/brands.html %}
+    {% endcomment %}
+    {% include project/images.html %}
+    {% include project/products.html %}
 </article>

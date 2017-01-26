@@ -63,12 +63,14 @@ defaults:
       type: projects
     values:
       layout: project
+      categories: []
+      tags: []
   -
     scope:
       path: _tags
       type: tags
     values:
-      layout: default
+      layout: tag
   -
     scope:
       path: _cats
