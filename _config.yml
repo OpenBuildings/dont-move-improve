@@ -70,7 +70,7 @@ defaults:
       path: _tags
       type: tags
     values:
-      layout: default
+      layout: tag
   -
     scope:
       path: _cats
