@@ -67,8 +67,8 @@ defaults:
       layout: default
   -
     scope:
-      path: _categories
-      type: categories
+      path: _cats
+      type: cats
     values:
       layout: default
 

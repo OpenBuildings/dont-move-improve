@@ -13,8 +13,10 @@ title: Shortlisted
 <section class="project-listing">
 {% assign sorted = (site.projects | sort: 'order') %}
 {% for project in sorted %}
-    {% if categories == 'shortlisted' %}
+    {% for category in project.categories %}
+        {% if category == 'shortlisted' %}
             {% include project/listing.html %}
-    {% endif %}
+        {% endif %}
+    {% endfor %}
 {% endfor %}
 </section>

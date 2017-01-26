@@ -13,8 +13,10 @@ title: Winners
 <section class="project-listing">
 {% assign sorted = (site.projects | sort: 'order') %}
 {% for project in sorted %}
-    {% if categories == 'winner' %}
+    {% for category in project.categories %}
+        {% if category == 'winner' %}
             {% include project/listing.html %}
-    {% endif %}
+        {% endif %}
+    {% endfor %}
 {% endfor %}
 </section>
