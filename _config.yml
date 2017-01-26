@@ -45,6 +45,9 @@ collections:
   tags:
     permalink: /:title
     output: true
+  cats:
+    permalink: /:title
+    output: true
 
 defaults:
   -
@@ -63,6 +66,12 @@ defaults:
     scope:
       path: _tags
       type: tags
+    values:
+      layout: default
+  -
+    scope:
+      path: _cats
+      type: cats
     values:
       layout: default
 
