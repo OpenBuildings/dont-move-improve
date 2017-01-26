@@ -1,7 +1,7 @@
 <ul class="tags">
 {% for pageCategory in page.categories %}
     {% for category in site.cats %}
-        {% if category.title == pageCategory %}
+        {% if category.slug == pageCategory %}
             <li>
                 <a href="{{ category.url | relative_url }}">{{ category.title }}</a>
             </li>
@@ -11,7 +11,7 @@
 {% for pageTag in page.tags %}
     {% for tag in site.tags %}
         {% if tag.title == pageTag %}
-            <li><a href="{{ category.url | relative_url }}">{{ tag }}</a></li>
+            <li><a href="{{ tag.url | relative_url }}">{{ tag.title }}</a></li>
         {% endif %}
     {% endfor %}
 {% endfor %}
