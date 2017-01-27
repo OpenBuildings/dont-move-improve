@@ -22,6 +22,7 @@ description: > # this means to ignore newlines until "baseurl:"
     to discover and buy the furniture and lighting.
 baseurl: "/dont-move-improve" # the subpath of your site, e.g. /blog
 url: "https://clippings.com" # the base hostname & protocol for your site, e.g. http://example.com
+repository: clippings/dont-move-improve
 twitter_username: ClippingsDesign
 github_username:  clippings
 
