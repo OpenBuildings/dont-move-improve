@@ -28,7 +28,7 @@ github_username:  clippings
 # Build settings
 markdown: kramdown
 gems:
-  - jekyll-feed
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
